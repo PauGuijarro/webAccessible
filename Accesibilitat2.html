@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebAccessible">
+    <link rel="stylesheet" href="Accesibilitat2.css">
+    <title>Web accesible</title>
+</head>
+<body>
+    <header>
+        <h1>Evento Multimúsica</h1>
+        <img src="festivales-de-musica-de-verano-luces-1024x688-1.webp" alt="Festival de música" width="800px" height="auto" loading="lazy">
+    </header>
+    
+    <nav>
+        <ul>
+            
+            <li><a href="#registro">Reserva tus entradas</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main class="grid-container">
+        <img class="img-1" src="Adobe Express - file (1).webp" alt="Discoteca con música" width="300" height="400" loading="lazy">
+        <img class="img-2" src="Adobe Express - file (2).webp" alt="Festival de jazz" width="300" height="400"loading="lazy">
+        <img class="img-3" src="Adobe Express - file (3).webp" alt="Concierto de reggaeton" width="300" height="400" loading="lazy">
+        <img class="img-4" src="Adobe Express - file.webp" alt="Música tecno" width="300" height="400" loading="lazy">
+    </main>
+    <br>
+    <br>
+    <article id="registro">
+        <h2>Regístrate:</h2>
+        <form>
+            <label for="nom">Nombre:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="correu">Correo electrónico:</label>
+            <input type="email" id="correu" name="correu" required><br><br>
+
+            <label for="tipus_entrada">Tipo de entrada:</label>
+            <select id="tipus_entrada" name="tipus_entrada" required>
+                <option value="">Selecciona una opción</option>
+                <option value="normal">Normal (50€)</option>
+                <option value="vip">VIP (80€)</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+
+    <br>
+    <aside id="horarios">
+        <h3>Horarios:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th>Horario</th>
+                    <th>Localización</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Concierto de Rock</td> 
+                    <td>Concierto de rock en directo con los mejores grupos de la escena nacional e internacional</td>
+                    <td>20 de Junio</td>
+                    <td>21:00</td>
+                    <td>Plaza Mayor</td>
+                </tr>
+                <tr>
+                    <td>Concierto de Pop</td>
+                    <td>Concierto de pop en directo con los mejores grupos de la escena nacional e internacional</td>
+                    <td>21 de Junio</td>
+                    <td>21:00</td>
+                    <td>Plaza Mayor</td>
+                </tr>
+                <tr>
+                    <td>Concierto de Jazz</td>
+                    <td>Concierto de jazz en directo con los mejores grupos de la escena nacional e internacional</td>
+                    <td>22 de Junio</td>
+                    <td>21:00</td>
+                    <td>Plaza Mayor</td>
+                </tr>
+                <tr>
+                    <td>Concierto de Reggaeton</td>
+                    <td>Concierto de reggaeton en directo con los mejores grupos de la escena nacional e internacional</td>
+                    <td>23 de Junio</td>
+                    <td>21:00</td>
+                    <td>Plaza Mayor</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        
+    </aside>
+    <br>
+    <footer>
+        <p> 2025 Evento Multimúsica. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

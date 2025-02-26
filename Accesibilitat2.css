@@ -1,0 +1,197 @@
+/* General Styling */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+    font-size: 50px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+nav {
+    background-color: #4a0072;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #6a1b9a;
+}
+
+/* Table styling */
+table {
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    font-size: 18px;
+}
+
+th {
+    background-color: purple;
+    color: white;
+}
+
+td,tr {
+    background-color: #f2f2f2;
+}
+
+
+/* Form styling */
+article {
+    background-color: purple;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: purple;
+    font-size: 25px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px 0;
+}
+ button[type="submit"] {
+    background-color: #8a2be2;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #8a2be2;
+    }
+input[type="text"], 
+input[type="email"]{
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+ 
+select {
+    width: 97.4%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #4a0072;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button:hover {
+    background-color: #4a0072;
+}
+
+/* Grid styling for images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.grid-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a0072;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Make footer stick to the bottom of the page if content is short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
